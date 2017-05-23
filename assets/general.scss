@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import './variables.scss';
+
+body {
+  margin: 0;
+}
+
+.button {
+  padding: 10px 70px;
+  text-transform: uppercase;
+  font-size: $font-size-s;
+  cursor: pointer;
+  margin-bottom: 16px;
+
+  &.pink-button {
+    background-color: $color-salmon-pink;
+    color:white;
+
+    &:hover {
+      background-color: darken($color-salmon-pink, 10%);
+    }
+  }
+
+  &.blue-button {
+    background-color: $color-blue-grey;
+    color:white;
+
+    &:hover {
+      background-color: darken($color-blue-grey, 10%);
+    }
+  }
+}
