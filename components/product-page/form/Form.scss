@@ -1,0 +1,137 @@
+@import '../../../assets/variables';
+
+#form {
+  display: none;
+  &.open {
+    display: block;
+  }
+}
+
+.form-container {
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: left;
+  font-family: $font-open-sans;
+
+  .form-title {
+    padding: $padding-m 0;
+    font-size: $font-size-l;
+    border-bottom: $border-normal $color-salmon-pink;
+    font-weight: $font-weight-button;
+    color: #444;
+  }
+
+  .form-group {
+    position: relative;
+    width: 50%;
+    padding: $padding-m 0;
+    display: flex;
+
+    .input-info {
+      position: relative;
+      width: 50%;
+      padding-top: $padding-s;
+      padding-bottom: $padding-m;
+      font-size: $font-size-s;
+      color: $color-regular-grey;
+    }
+
+    .input-box {
+      position: relative;
+      height: 35px;
+      width: 300px;
+      cursor: pointer;
+      font-size: $font-size-s;
+      background-color: white;
+      border: $border-normal $color-white-grey;
+
+      &::placeholder {
+        font-size: $font-size-s;
+        color: $color-light-grey;
+      }
+
+      &:hover {
+        border: $border-normal $color-light-turquoise;
+      }
+
+      &:focus {
+        border: $border-normal $color-light-turquoise;
+      }
+
+      &:active {
+        border: $border-normal $color-light-turquoise;
+      }
+
+    }
+
+    .text-box {
+      position: relative;
+      width: 300px;
+      height: 50px;
+      cursor: pointer;
+      font-size: $font-size-s;
+      background-color: white;
+      border: $border-normal $color-white-grey;
+
+      &::placeholder {
+        font-size: $font-size-s;
+        color: $color-light-grey;
+      }
+
+      &:hover {
+        border: $border-normal $color-light-turquoise;
+      }
+
+      &:focus {
+        border: $border-normal $color-light-turquoise;
+      }
+
+      &:active {
+        border: $border-normal $color-light-turquoise;
+      }
+    }
+
+    .rating-group {
+      padding-top: $padding-s;
+      cursor: pointer;
+    }
+  }
+
+  .form-buttons {
+    display: flex;
+    padding-top: $padding-m;
+
+    .button {
+      margin-right: $margin-medium;
+    }
+  }
+
+  .error-message {
+    display: none;
+    width: 350px;
+    padding: $padding-m;
+    font-size: $font-size-s;
+    border: $border-normal $color-strong-red;
+    background-color: lighten($color-salmon-pink, 20%);
+    color: $color-dark-grey;
+
+    &.open {
+      display: block;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 1270px) {
+  .form-container {
+    padding: $padding-l;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .form-container {
+    .form-group {
+      width: 90%;
+    }
+  }
+}

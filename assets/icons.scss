@@ -1,0 +1,59 @@
+@import './font-awesome/scss/variables';
+@import './variables.scss';
+
+.icon {
+  font-family: 'FontAwesome';
+
+
+  &.icon-arrow-down {
+    &:after {
+      content: $fa-chevron-down;
+      padding-left: 8px;
+    }
+  }
+
+  &.icon-search {
+
+    &:after {
+      content: $fa-var-search;
+      font-size: $font-size-s;
+      position: relative;
+      top: 2px;
+      left: -23px;
+      padding: 4.5px;
+      background-color: $color-dark-white;
+      color: $color-regular-grey;
+    }
+  }
+
+  &.icon-star {
+    &:after {
+      content: $fa-star;
+      color: $color-regular-grey;
+      padding-right: 4px;
+    }
+
+  }
+
+  &.icon-empty-star {
+    &:after {
+      content: $fa-empty-star;
+      color: $color-regular-grey;
+      padding-right: 4px;
+    }
+
+  }
+
+  &.icon-burger {
+    &:after {
+      content: $fa-var-bars;
+      font-size: $font-size-l;
+      color: black;
+      padding-right: 32px;
+      cursor: pointer;
+    }
+  }
+
+
+}
+

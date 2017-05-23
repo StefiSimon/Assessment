@@ -1,0 +1,80 @@
+@import '../../../assets/variables';
+
+.review-container {
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: left;
+  font-family: $font-open-sans;
+
+  .review-title {
+    padding: $padding-m 0;
+    margin-bottom: $margin-medium;
+    font-size: $font-size-l;
+    border-bottom: $border-normal $color-salmon-pink;
+    font-weight: $font-weight-button;
+    color: $color-dark-grey;
+  }
+
+  .card-container {
+    width: 60%;
+    padding: $padding-xl;
+    display: flex;
+    margin-bottom: $margin-medium;
+    border: $border-normal $color-white-grey;
+    border-bottom: $border-thick $color-salmon-pink;
+
+    .card-image {
+      padding: $padding-s;
+      border: $border-dotted $color-white-grey;
+
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    .card-info {
+      padding: 0 0 $padding-m $padding-m;
+      margin-left: $margin-medium;
+
+      .card-name {
+        padding-bottom: $padding-s;
+        font-size: $font-size-m;
+        font-weight: $font-weight-text;
+        color: $color-dark-grey;
+
+        span.icon.icon-star {
+          padding-left: $padding-s;
+        }
+      }
+
+      .card-date {
+        padding-bottom: $padding-m;
+        font-size: $font-size-s;
+        color: $color-regular-grey;
+      }
+
+      .card-comment {
+        font-size: $font-size-xs;
+        color: $color-light-grey;
+      }
+
+    }
+  }
+
+}
+
+@media only screen and (max-width: 1270px) {
+  .review-container {
+    padding: $padding-l;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .review-container {
+    .card-container {
+      width: 80%;
+    }
+  }
+
+}

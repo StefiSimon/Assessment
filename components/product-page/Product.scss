@@ -1,0 +1,100 @@
+@import '../../assets/variables';
+
+.product-container {
+  display: flex;
+  margin: $margin-big 10%;
+  font-family: $font-open-sans;
+
+  .product-presentation {
+    padding-top: 160px;
+    position: relative;
+    margin-right: $margin-medium;
+    text-align: center;
+    width: 40%;
+    border: $border-normal $color-salmon-pink;
+    color: $color-light-grey;
+  }
+
+  .product-info-card {
+    position: relative;
+    width: 60%;
+
+    .product-title {
+      width: 100%;
+      text-align: left;
+      padding: $padding-m 0;
+      font-size: $font-size-l;
+      color: $color-dark-grey;
+      font-weight: $font-weight-button;
+      border-bottom: $border-normal $color-salmon-pink;
+
+      .product-category {
+        font-size: $font-size-s;
+        color: $color-light-grey;
+      }
+
+      .product-price {
+        padding: $padding-xl;
+        font-size: $font-size-l;
+        color: $color-blue-grey;
+      }
+    }
+
+    .product-rating {
+      padding: $padding-s 0;
+    }
+
+    .product-info {
+      padding: $padding-s $padding-s $padding-s 0;
+      font-size: $font-size-s;
+      color: $color-regular-grey;
+
+      &:after {
+        content: '•';
+        padding-left: $padding-s;
+      }
+
+      &:last-of-type {
+        &:after {
+          content: '';
+        }
+
+      }
+    }
+
+    .product-size-dropdown {
+      padding: $padding-m 0;
+
+      .select-size {
+        width: 230px;
+        height: 34px;
+        border-radius: 0;
+        border: $border-normal $color-white-grey;
+        cursor: pointer;
+        font-size: $font-size-xs;
+        background-color: white;
+        color: $color-regular-grey;
+
+        &:hover {
+          border: $border-normal $color-light-turquoise;
+        }
+
+        &:focus {
+          border: $border-normal $color-light-turquoise;
+          box-shadow: none;
+        }
+      }
+    }
+
+    .product-buttons {
+      display: inline-block;
+      padding: $padding-m 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 1270px) {
+  .product-container {
+    margin: $margin-big $padding-l;
+  }
+}
